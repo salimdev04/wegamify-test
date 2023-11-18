@@ -1,11 +1,12 @@
 import Link from "next/link"
 import styles from "./Footer.module.css"
+import { hiddenOnMobile } from "@/utils/styles"
 
 export default function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.header}>
-                <img src="/logo-footer.svg" alt="" />
+                <img src="/logo-footer.svg" alt="" className={hiddenOnMobile} />
                 <nav className={styles.footerLink}>
                     <Link href={"#"} >About Us</Link>
                     <Link href={"#"} >Services</Link>
@@ -21,7 +22,6 @@ export default function Footer() {
                 </div>
             </div>
             <div className={styles.policyContainer}>
-
                 <p>© 2023 Relume. All rights reserved.</p>
                 <Link className=" underline" href={"#"}>Privacy Policy</Link>
                 <Link className=" underline" href={"#"}>Terms of Service</Link>

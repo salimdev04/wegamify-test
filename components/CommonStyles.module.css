@@ -10,10 +10,14 @@
     line-height: 150%;
 }
 
+.colorText {
+    color: #BD1A1A;
+}
+
 .section {
     padding: 112px 64px;
     display: flex;
-    gap: 80px;
+    gap: 8rem;
 }
 
 .padding {
@@ -24,4 +28,36 @@
     padding: 8px 20px;
     background-color: #000;
     color: white;
+}
+
+.hiddenOnMobile {
+    display: block;
+}
+
+.hiddenOnDesktop {
+    display: none;
+}
+
+@media screen and (max-width: 712px) {
+    .section {
+        padding: 64px 20px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .padding {
+        padding: 64px 20px;
+    }
+
+    .colorText {
+        color: #000;
+    }
+
+    .hiddenOnMobile {
+        display: none;
+    }
+
+    .hiddenOnDesktop {
+        display: block;
+    }
 }

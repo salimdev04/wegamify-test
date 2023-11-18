@@ -1,3 +1,4 @@
+import { hiddenOnMobile } from "@/utils/styles"
 import commonStyles from "./CommonStyles.module.css"
 
 
@@ -10,8 +11,9 @@ interface SimpleCardProps {
 
 export const AdvantageCard = ({ title, content, toggle }: SimpleCardProps) => {
     return (
-        <div className="flex gap-[40px] mb-4">
-            <img src="/divider.svg" className={toggle ? 'hidden' : 'block'} alt="" />
+        <div className="flex gap-[40px] mb-4 pr-4">
+            <img src="/divider.svg" className={toggle ? 'hidden' : commonStyles.hiddenOnMobile} alt="" />
+            <img src="/black-divider.svg" className={toggle ? 'hidden' : commonStyles.hiddenOnDesktop} alt="" />
             <img src="/Relume.svg" className={!toggle ? 'hidden' : 'block'} alt="" />
             <div>
                 <h3 className={[commonStyles.boldText, 'text-xl mb-4'].join(' ')}>{title}</h3>
@@ -24,8 +26,8 @@ export const AdvantageCard = ({ title, content, toggle }: SimpleCardProps) => {
 export const DiscoverCard = ({ title, content }: SimpleCardProps) => {
     return (
         <div>
-            <h3 className={[commonStyles.boldText, 'text-[32px]'].join(' ')}>{title}</h3>
-            <p className={[commonStyles.lightText, 'text-base py-4'].join(' ')}>{content}</p>
+            <h3 className={[commonStyles.boldText, ' text-lg tablet:text-[32px]'].join(' ')}>{title}</h3>
+            <p className={[commonStyles.lightText, 'text-base py-4 pr-4'].join(' ')}>{content}</p>
         </div>
     )
 }
