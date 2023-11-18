@@ -14,11 +14,11 @@ export default function Footer() {
                     <Link href={"#"} >More</Link>
                 </nav>
                 <div className="flex gap-[12px]">
-                    <Link href={"#"}> <img src="/icon/Facebook.svg" alt="" /> </Link>
-                    <Link href={"#"}> <img src="/icon/Instagram.svg" alt="" /> </Link>
-                    <Link href={"#"}> <img src="/icon/LinkedIn.svg" alt="" /> </Link>
-                    <Link href={"#"}> <img src="/icon/X.svg" alt="" /> </Link>
-                    <Link href={"#"}> <img src="/icon/Youtube.svg" alt="" /> </Link>
+                    <Link href={"#"}> <img src="/Icon/Facebook.svg" alt="" /> </Link>
+                    <Link href={"#"}> <img src="/Icon/Instagram.svg" alt="" /> </Link>
+                    <Link href={"#"}> <img src="/Icon/LinkedIn.svg" alt="" /> </Link>
+                    <Link href={"#"}> <img src="/Icon/X.svg" alt="" /> </Link>
+                    <Link href={"#"}> <img src="/Icon/Youtube.svg" alt="" /> </Link>
                 </div>
             </div>
             <div className={styles.policyContainer}>
