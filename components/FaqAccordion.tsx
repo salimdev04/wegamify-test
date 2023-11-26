@@ -9,72 +9,72 @@ import {
 
 import 'react-accessible-accordion/dist/fancy-example.css';
 
+import styles from './FaqAccordion.module.css'
+
 export const FaqAccordion = () => {
     return (
-        <Accordion className=' max-w-[768px]'>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What is our solution?
+        <Accordion className='max-w-[768px]'>
+            <AccordionItem >
+                <AccordionItemHeading className={styles.accordionHeading}>
+                    <AccordionItemButton className={styles.accordionButton}>
+                        <span> What is our solution?</span>
+                        <img src="/Icon.svg" alt="" />
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                        Exercitation in fugiat est ut ad ea cupidatat ut in
-                        cupidatat occaecat
-                    </p>
+                <AccordionItemPanel className={styles.accordionPanel}>
+                    Exercitation in fugiat est ut ad ea cupidatat ut in
+                    cupidatat occaecat
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        How does it work?
+                <AccordionItemHeading className={styles.accordionHeading}>
+                    <AccordionItemButton className={styles.accordionButton}>
+
+                        <span> How does it work?</span>
+                        <img src="/Icon.svg" alt="" />
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                        In ad velit in ex nostrud dolore cupidatat consectetur
-                        ea i
-                    </p>
+                <AccordionItemPanel className={styles.accordionPanel}>
+                    In ad velit in ex nostrud dolore cupidatat consectetur
+                    ea i
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        What are the benefits?
+                <AccordionItemHeading className={styles.accordionHeading}>
+                    <AccordionItemButton className={styles.accordionButton}>
+
+                        <span> What are the benefits?</span>
+                        <img src="/Icon.svg" alt="" />
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                        In ad velit in ex nostrud dolore cupidatat consectetur
-                        ea i
-                    </p>
+                <AccordionItemPanel className={styles.accordionPanel}>
+                    In ad velit in ex nostrud dolore cupidatat consectetur
+                    ea i
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Is it customizable?
+                <AccordionItemHeading className={styles.accordionHeading}>
+                    <AccordionItemButton className={styles.accordionButton}>
+
+                        <span> Is it customizable?</span>
+                        <img src="/Icon.svg" alt="" />
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                        In ad velit in ex nostrud dolore cupidatat consectetur
-                        ea i
-                    </p>
+                <AccordionItemPanel className={styles.accordionPanel}>
+                    In ad velit in ex nostrud dolore cupidatat consectetur
+                    ea i
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        How can I get started?
+                <AccordionItemHeading className={[styles.accordionHeading, 'border-b border-black'].join(" ")}>
+                    <AccordionItemButton className={styles.accordionButton}>
+                        <span> How can I get started?</span>
+                        <img src="/Icon.svg" alt="" />
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <p>
-                        In ad velit in ex nostrud dolore cupidatat consectetur
-                        ea i
-                    </p>
+                <AccordionItemPanel className={styles.accordionPanel}>
+                    In ad velit in ex nostrud dolore cupidatat consectetur
+                    ea i
                 </AccordionItemPanel>
             </AccordionItem>
         </Accordion>
